@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <script src="/js/dashboard.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>DeeptapodAI</title>
+</head>
+<body>
+<header class="user-header">
+    <nav class="user-nav">
+        <a class="user-logo" id="home-link">
+            <img src="/img/logo.webp" alt="Logo" />
+        </a>
+
+        <div class="user-container">
+            <ul class="user-list">
+                <button id="api-btn-doc" type="button" class="api-btn"><span class="api-btn-text">Read
+                            Documentation</span><span class="material-symbols-outlined">arrow_outward</span></button>
+            </ul>
+            <button id="user-btn" class="user-btn">Log Out</button>
+        </div>
+    </nav>
+</header>
+
+<main class="user-main">
+    <div class="user-info">
+        <h1>Welcome, <%= user.username %>.</h1>
+        <div class="apikey-info">
+            <p>Your API key: </p>
+            <div class="apikey-copy">
+                <p id="apiKey"><%= user.apiKey %></p>
+                <span class="material-symbols-outlined" id="copyIcon">content_copy</span>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeeptapodAI</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <script src="/js/signup.js" defer></script>
+</head>
+
+<body>
+<main class="signup-main">
+    <div id="logo" class="logo-cont">
+        <img class="logo" src="/img/logo.webp" alt="Logo">
+    </div>
+    <div class="reg-cont">
+        <p class="title">CREATE ACCOUNT</p>
+        <p class="subtitle">GET STARTED NOW</p>
+        <p class="sub-subtitle">Enter your credentials to access your account</p>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <span class="material-symbols-outlined name">
+                        account_circle
+                    </span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                <span class="material-symbols-outlined email">
+                        mail
+                    </span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="material-symbols-outlined password">
+                        lock
+                    </span>
+            </div>
+            <div class="form-group last">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"
+                       required>
+                <span class="material-symbols-outlined conf-password">
+                        key
+                    </span>
+            </div>
+            <div class="agree-input">
+                <input type="checkbox" id="agree-checkbox" required>
+                <p>I agree to the <a href="#" class="terms-conds">terms and conditions</a></p>
+            </div>
+
+            <button class="form-btn" type="submit"> Sign Up
+                <span class="material-symbols-outlined">
+                        arrow_outward
+                    </span>
+            </button>
+        </form>
+        <div class="or">
+            <hr>
+            <p>or</p>
+            <hr>
+        </div>
+        <div class="google-icon">
+            <img src="/img/google-icon.webp" alt="Google Icon" width="40" height="40">
+        </div>
+        <div class="signin">
+            <p>Already have an account?</p>
+            <a id="signin-btn">Sign In</a>
+        </div>
+    </div>
+
+     <div id="success-popup" class="popup">
+    <div class="popup-content">
+        <div class="popup-icon">
+            <span class="material-symbols-outlined">check</span>
+        </div>
+        <div class="popup-title">
+            <p>SUCCESS!</p>
+        </div>
+        <p class="popup-message">
+            You have successfully completed registration on DeeptapodAI
+        </p>
+        <p class="popup-message sub">
+            Please check your email.
+            You will be able to enter the site after you follow the activation link in the letter.
+        </p>
+        <div>
+            <a class="btn-cont">
+                <button id="dashboard-link" type="button" class="popup-btn">Continue To Dashboard</button>
+            </a>
+        </div>
+
+    </div>
+</div>
+</main>
+</body>
+
+</html>

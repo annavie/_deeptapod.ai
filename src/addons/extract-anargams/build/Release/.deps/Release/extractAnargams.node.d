@@ -1,0 +1,1 @@
+cmd_Release/extractAnargams.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=11.0 -arch arm64 -L./Release -stdlib=libc++  -o Release/extractAnargams.node Release/obj.target/extractAnargams/extract-anargams.o 

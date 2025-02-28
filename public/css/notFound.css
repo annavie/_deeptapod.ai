@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error-main {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("../img/registration-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-cont {
+    min-height: 80px;
+    display: flex;
+    padding: 21px 104px;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 60px;
+    max-height: 40px;
+    z-index: 999;
+}
+
+.error-cont {
+    width: 824px;
+    height: fit-content;
+    padding: 32px 65px;
+    position: relative;
+    top: 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+    background: rgba(40, 59, 65, 0.3);
+    border: 1px solid #272727;
+}
+
+.title {
+    font-family: 'Swis721BT-Condensed-Regular', sans-serif;
+    color: #CDCDCD;
+    font-size: 180px;
+    font-weight: 400;
+    text-align: center;
+}
+.landing-btn {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px auto;
+        gap: 8px;
+    width: 228px;
+    height: 46px;
+    padding: 16px 26px;
+    border-radius: 4px;
+    border: 1px solid #77d2b0;
+    background-color: #136e4c;
+    color: #cdcdcd;
+}
+
+.sub-subtitle {
+    font-family: 'Swis721BT-Condensed-Light', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 34.5px;
+    text-align: center;
+    color: #CDCDCD;
+    margin: 8px auto;
+}
+@media screen and (max-width: 768px){
+    .logo-cont {
+        padding: 21px 5%;
+    }
+    .error-cont {
+        width: 90%;
+        max-width: none;
+        padding: 32px 5%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo-cont {
+        padding: 21px 3%;
+    }
+
+    .error-cont {
+        width: 90%;
+        max-width: none;
+        padding: 32px 3%;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .sub-subtitle {
+        font-size: 16px;
+    }
+}
+

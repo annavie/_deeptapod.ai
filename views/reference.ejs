@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reference.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>DeeptapodAI</title>
+</head>
+
+<body>
+    <div id="overlay" class="overlay"></div>
+    <header class="landing-header">
+        <div class="landing-header-menu-icon">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <a class="header-logo" href="#">
+            <img src="/img/logo.webp" alt="Logo">
+        </a>
+        <div class="profile">
+            <span id="dashboard-link" class="material-symbols-outlined">
+                person
+            </span>
+            <span class="material-symbols-outlined">
+                more_vert
+            </span>
+        </div>
+    </header>
+    <main class="ref-main">
+        <div class="container">
+
+            <aside class="api-list-sidebar">
+                <div class="api-list-sidebar-close-icon">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+                <hr class="api-list-sidebar-line">
+                <div class="search-container">
+                    <span class="material-symbols-outlined">filter_list</span>
+                    <input type="text" placeholder="Filter" class="search-container-input">
+                    <!-- <img type="submit" src="img/search-icon.png" alt="search" class="search-icon"> -->
+                </div>
+                <div class="api-list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="api-list-arrow-icon">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </div>
+
+            </aside>
+
+            <aside>
+                <div class="api-desc-cont">
+                    <div class="api-desc-header">
+                        <p class="api-desc-title"></p>
+                        <div class="api-desc-save-icon">
+                            <div class="code">
+                                <span class="material-symbols-outlined  code-icon">
+                                    code
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-desc-subtitle">
+                    </div>
+                    <div class="api-int">
+                        How to Integrate?
+                    </div>
+                    <div class="api-int-desc">
+                        1. Log in to your DeepTapod dashboard and locate your unique API key provided in your account.
+                        <br>
+                        <br>
+                        2. Each API function corresponds to a specific endpoint. For example, to capitalize the first
+                        letter of each
+                        word in your text, use the endpoint `capitalize-first-letter`. Prepare your request body in JSON
+                        format with the key "text" and the value being the text you want to analyze.
+                        Make an HTTP POST request to the URL:
+                        <br>
+                        <br>
+                        <pre>`https://deeptapod.com/api/text/{apiKey}/{endpoint}`</pre>
+
+                        <br>
+                        <br>
+                        3. Replace `{apiKey}` with your unique API key and `{endpoint}` with the desired function, such
+                        as `capitalize-first-letter`.
+                        <br>
+                        <br>
+                        If the request is successful, you will receive a JSON response with the processed text. If your
+                        API key is invalid, you will receive an error message indicating that you do not have access to
+                        the functions.
+                        <br>
+                        <br>
+                        4. Ensure your API key is correct and verify that your request body is properly formatted in
+                        JSON. Refer to our [API documentation](https://deeptapod.com/docs) or contact our support team
+                        for additional assistance.
+                    </div>
+
+                    <div class="api-list-arrow-icon-active">
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
+                </div>
+            </aside>
+
+            <aside class="api-code-sidebar">
+                <div class="lang-menu">
+                    <ul>
+                        <li><button class="lang-btn" onclick="changeColor(this)" data-tab="cpp">C++</button></li>
+                        <li><button class="lang-btn" onclick="changeColor(this)" data-tab="java">Java</button></li>
+                        <li><button class="lang-btn" onclick="changeColor(this)" data-tab="csharp">C#</button></li>
+                        <li><button class="lang-btn" onclick="changeColor(this)" data-tab="python">Python</button></li>
+                        <li><button class="lang-btn" onclick="changeColor(this)" data-tab="javascript">JS</button></li>
+                    </ul>
+                    <pre class="code-display"></pre>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+<!-- 
+    <div id="api-code-popup" class="api-code-popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <div class="lang-menu">
+                <ul>
+                    <li><button class="lang-btn" onclick="changeColor(this)" data-tab="cpp">C++</button></li>
+                    <li><button class="lang-btn" onclick="changeColor(this)" data-tab="java">Java</button></li>
+                    <li><button class="lang-btn" onclick="changeColor(this)" data-tab="csharp">C#</button></li>
+                    <li><button class="lang-btn" onclick="changeColor(this)" data-tab="python">Python</button></li>
+                    <li><button class="lang-btn" onclick="changeColor(this)" data-tab="javascript">JS</button></li>
+                </ul>
+                <pre class="code-display"></pre>
+            </div>
+        </div>
+    </div> -->
+</body>
+<script src="constants.js"></script>
+<script src="reference.js"></script>
+
+</html>

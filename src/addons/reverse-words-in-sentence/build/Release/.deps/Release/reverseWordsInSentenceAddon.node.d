@@ -1,0 +1,1 @@
+cmd_Release/reverseWordsInSentenceAddon.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=11.0 -arch arm64 -L./Release -stdlib=libc++  -o Release/reverseWordsInSentenceAddon.node Release/obj.target/reverseWordsInSentenceAddon/reverse-words-in-sentence.o 

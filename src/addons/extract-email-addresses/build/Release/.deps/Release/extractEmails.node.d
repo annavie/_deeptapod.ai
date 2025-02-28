@@ -1,0 +1,1 @@
+cmd_Release/extractEmails.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=11.0 -arch arm64 -L./Release -stdlib=libc++  -o Release/extractEmails.node Release/obj.target/extractEmails/extract-email-addresses.o 

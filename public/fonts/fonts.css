@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Akkurat-Bold';
+    src: url('Akkurat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter.ttf');
+}
+
+@font-face {
+    font-family: 'Swis721BT-Condensed-Regular';
+    src: url('Swiss-721-Condensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Swis721BT-Condensed-Bold';
+    src: url('Swiss-721-Condensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Swis721BT-Condensed-Light';
+    src: url('Swiss-721-Condensed-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('Montserrat-Regular.ttf');
+}
+
